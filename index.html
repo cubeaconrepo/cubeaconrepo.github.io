@@ -1,45 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html class="ui-mobile">
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
   <!-- Include meta tag to ensure proper rendering and touch zooming -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
   <!-- Include jQuery Mobile stylesheets -->
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
   <!-- Include the jQuery library -->
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <!-- Include the jQuery Mobile library -->
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <title>Cubeacon Repo</title>
 </head>
-<body>
+<body class="ui-mobile-viewport ui-overlay-a">
 
-<div data-role="page" id="pageone">
+<div data-role="page" id="home" data-url="home" tabindex="0" class="ui-page ui-page-theme-a ui-page-footer-fixed ui-page-active" style="padding-bottom: 44px; min-height: 673px;">
+  <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+  <h1 class="ui-title" role="heading" aria-level="1">Cubeacon Repo</h1>
+  </div>
+
+  <nav data-role="navbar" class="ui-navbar" role="navigation">
+    <ul class="ui-grid-c">
+      <li class="ui-block-a">
+        <a href="#home" data-rel="dialog" data-icon="home" class="ui-link ui-btn ui-icon-home ui-btn-icon-top">Home</a>
+      </li>
+      <li class="ui-block-b">
+        <a href="#download" data-rel="dialog" data-icon="grid" class="ui-link ui-btn ui-icon-grid ui-btn-icon-top">Download</a>
+      </li>
+      <li class="ui-block-c">
+        <a href="#tutorial" data-rel="dialog" data-icon="search" class="ui-link ui-btn ui-icon-search ui-btn-icon-top">Tutorial</a>
+      </li>
+      <li class="ui-block-d">
+        <a href="#request" data-rel="dialog" data-icon="calendar" class="ui-link ui-btn ui-icon-calendar ui-btn-icon-top">Request</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <div data-role="main" class="ui-content"><br>
+    <p style="text-align:center;">Welcome to Cubeacon Repository!</p>
+  </div>
+       
+  <div data-role="footer" data-position="fixed" role="contentinfo" class="ui-footer ui-bar-inherit ui-footer-fixed slideup">
+    <h1 class="ui-title" role="heading" aria-level="1">Copyright (c) 2015 Eyro Labs.</h1>
+  </div>
+</div> 
+
+<!-- START OF DOWNLOAD PAGE -->
+<div data-role="page" id="download" data-url="download">
   <div data-role="header">
-    <h1>Eyro Private Repo</h1>
+  <h1>Download App</h1>
   </div>
-
-  <div data-role="main" class="ui-content">
-    <div data-role="controlgroup" data-type="vertical">
-      <p>AutoCar-Android :</p>
-      <a href="AutoCar-v2.apk" class="ui-btn">Version 2.0</a>
-    </div>
-    <div data-role="controlgroup" data-type="vertical">
-      <p>Automation-iOS :</p>
-      <a href="Automation-v1.1.ipa" class="ui-btn">Version 1.1</a>
-    </div>
-    <div data-role="controlgroup" data-type="vertical">
-      <p>Retail-Android :</p>
-      <a href="Retail-v1.0.apk" class="ui-btn">Version 1.0</a>
-    </div>
-     <div data-role="controlgroup" data-type="vertical">
-      <p>CubeaconHajj-Android :</p>
-      <a href="CubeaconHajj-v1.2.apk" class="ui-btn">Version 1.2</a>
-    </div>
+              
+    <div data-role="main" class="ui-content">
+    <ul data-role="listview" data-inset="true">
+      <li><a href="app/AutoCar-v2.apk">AutoCar - Android<span class="ui-li-count">v2.0</span></a></li>
+      <li><a href="app/Automation-v1.1.ipa">Automation - iOS<span class="ui-li-count">v1.1</span></a></li>
+      <li><a href="app/Retail-v1.0.apk">Retail - Android<span class="ui-li-count">v1.0</span></a></li>
+      <li><a href="app/CubeaconHajj-v1.2.apk">Hajj - Android<span class="ui-li-count">v1.2</span></a></li>
+    </ul>
+  <a href="#home" data-role="button" data-inline="true" data-icon="back">Go Back</a>
   </div>
-
-  <div data-role="footer">
+                  
+  <div data-role="footer" data-position="fixed">
     <h1>Copyright (c) 2015 Eyro Labs.</h1>
   </div>
 </div> 
+<!-- END OF DOWNLOAD PAGE -->
+
+<!-- START OF TUTORIAL PAGE -->
+<div data-role="page" id="tutorial" data-url="tutorial">
+  <div data-role="header">
+  <h1>Tutorial Step by Step</h1>
+  </div>
+              
+    <div data-role="main" class="ui-content">
+    <ul data-role="listview" data-inset="true">
+      <li><a href="app/AutoCar-v2.apk">AutoCar - Android<span class="ui-li-count">v2.0</span></a></li>
+      <li><a href="app/Automation-v1.1.ipa">Automation - iOS<span class="ui-li-count">v1.1</span></a></li>
+      <li><a href="app/Retail-v1.0.apk">Retail - Android<span class="ui-li-count">v1.0</span></a></li>
+      <li><a href="app/CubeaconHajj-v1.2.apk">Hajj - Android<span class="ui-li-count">v1.2</span></a></li>
+    </ul>
+  <a href="#home" data-role="button" data-inline="true" data-icon="back">Go Back</a>
+  </div>
+                  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright (c) 2015 Eyro Labs.</h1>
+  </div>
+</div> 
+<!-- END OF TUTORIAL PAGE -->
+
+<!-- START OF REQUEST PAGE -->
+<div data-role="page" id="request" data-url="request">
+  <div data-role="header">
+  <h1>Request Demo App</h1>
+  </div>
+              
+    <div data-role="main" class="ui-content">
+    <ul data-role="listview" data-inset="true">
+      <li><a href="app/AutoCar-v2.apk">AutoCar - Android<span class="ui-li-count">v2.0</span></a></li>
+      <li><a href="app/Automation-v1.1.ipa">Automation - iOS<span class="ui-li-count">v1.1</span></a></li>
+      <li><a href="app/Retail-v1.0.apk">Retail - Android<span class="ui-li-count">v1.0</span></a></li>
+      <li><a href="app/CubeaconHajj-v1.2.apk">Hajj - Android<span class="ui-li-count">v1.2</span></a></li>
+    </ul>
+  <a href="#home" data-role="button" data-inline="true" data-icon="back">Go Back</a>
+  </div>
+                  
+  <div data-role="footer" data-position="fixed">
+    <h1>Copyright (c) 2015 Eyro Labs.</h1>
+  </div>
+</div> 
+<!-- END OF REQUEST PAGE -->
 
 </body>
 </html>

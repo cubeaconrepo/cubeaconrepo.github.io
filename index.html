@@ -25,19 +25,23 @@
         <a href="#home" data-rel="dialog" data-icon="home" class="ui-link ui-btn ui-icon-home ui-btn-icon-top">Home</a>
       </li>
       <li class="ui-block-b">
-        <a href="#download" data-rel="dialog" data-icon="grid" class="ui-link ui-btn ui-icon-grid ui-btn-icon-top">Download</a>
+        <a href="#download" data-icon="grid" class="ui-link ui-btn ui-icon-grid ui-btn-icon-top">Apps</a>
       </li>
       <li class="ui-block-c">
         <a href="#tutorial" data-rel="dialog" data-icon="search" class="ui-link ui-btn ui-icon-search ui-btn-icon-top">Tutorial</a>
       </li>
       <li class="ui-block-d">
-        <a href="#request" data-rel="dialog" data-icon="calendar" class="ui-link ui-btn ui-icon-calendar ui-btn-icon-top">Request</a>
+        <a href="#request" data-icon="calendar" class="ui-link ui-btn ui-icon-calendar ui-btn-icon-top">Request</a>
       </li>
     </ul>
   </nav>
   
-  <div data-role="main" class="ui-content"><br>
-    <p style="text-align:center;">Welcome to Cubeacon Repository!</p>
+  <div data-role="main" class="ui-content">
+    <h3>Welcome to Cubeacon Repository!</h3>
+    <h4>Changelog</h4>
+    <ul>
+      <li>Sep, 28 2015 : Initial release</li>
+    </ul>
   </div>
        
   <div data-role="footer" data-position="fixed" role="contentinfo" class="ui-footer ui-bar-inherit ui-footer-fixed slideup">
@@ -48,17 +52,37 @@
 <!-- START OF DOWNLOAD PAGE -->
 <div data-role="page" id="download" data-url="download">
   <div data-role="header">
-  <h1>Download App</h1>
+    <a href="../index.html#home" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+    <h1>Download App</h1>
   </div>
               
     <div data-role="main" class="ui-content">
     <ul data-role="listview" data-inset="true">
-      <li><a href="app/AutoCar-v2.apk" data-ajax="false">AutoCar - Android<span class="ui-li-count">v2.0</span></a></li>
-      <li><a href="app/Automation-v1.1.ipa" data-ajax="false">Automation - iOS<span class="ui-li-count">v1.1</span></a></li>
-      <li><a href="app/Retail-v1.0.apk" data-ajax="false">Retail - Android<span class="ui-li-count">v1.0</span></a></li>
-      <li><a href="app/CubeaconHajj-v1.2.apk" data-ajax="false">Hajj - Android<span class="ui-li-count">v1.2</span></a></li>
+      <li data-role="divider"><h2>Android [*.apk]</h2></li>
+      <li>
+        <a href="app/AutoCar-v2.apk" data-ajax="false">
+          <img src="img/autocar.png">
+            <h2>AutoCar</h2>
+            <p>Showing car data based on a beacon</p>
+          <span class="ui-li-count">v2.0</span>
+        </a></li>
+      <li><a href="app/CubeaconHajj-v1.2.apk" data-ajax="false">
+          <img src="img/hajj.png">
+            <h2>Hajj</h2>
+            <p>Showing hajj jamaah by using beacon</p>
+          <span class="ui-li-count">v1.2</span></a></li>
+      <li><a href="app/Retail-v1.0.apk" data-ajax="false">
+          <img src="img/retail.png">
+            <h2>Retail</h2>
+            <p>Showing retail promo by using beacon</p>
+          <span class="ui-li-count">v1.0</span></a></li>
+      <li data-role="divider"><h2>iOS [*.ipa]</h2></li>
+      <li><a href="app/Automation-v1.1.ipa" data-ajax="false">
+          <img src="img/automation.png">
+            <h2>Automation</h2>
+            <p>Home automation using iBeacon protocol</p>
+          <span class="ui-li-count">v1.1</span></a></li>
     </ul>
-  <a href="#home" data-role="button" data-inline="true" data-icon="back">Go Back</a>
   </div>
                   
   <div data-role="footer" data-position="fixed">
@@ -70,7 +94,7 @@
 <!-- START OF TUTORIAL PAGE -->
 <div data-role="page" id="tutorial" data-url="tutorial">
   <div data-role="header">
-  <h1>Tutorial Step by Step</h1>
+  <h1>Tutorial Installation</h1>
   </div>
               
     <div data-role="main" class="ui-content">
@@ -78,7 +102,6 @@
       <li><a href="tutorial/install-android.html">Install Android App<span class="ui-li-count">*.apk</span></a></li>
       <li><a href="tutorial/install-ios.html">Install iOS App<span class="ui-li-count">*.ipa</span></a></li>
     </ul>
-  <a href="#home" data-role="button" data-inline="true" data-icon="back">Go Back</a>
   </div>
                   
   <div data-role="footer" data-position="fixed">
@@ -90,17 +113,29 @@
 <!-- START OF REQUEST PAGE -->
 <div data-role="page" id="request" data-url="request">
   <div data-role="header">
-  <h1>Request Demo App</h1>
+    <a href="../index.html#home" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+    <h1>Request App</h1>
   </div>
               
     <div data-role="main" class="ui-content">
-    <ul data-role="listview" data-inset="true">
-      <li><a href="app/AutoCar-v2.apk">AutoCar - Android<span class="ui-li-count">v2.0</span></a></li>
-      <li><a href="app/Automation-v1.1.ipa">Automation - iOS<span class="ui-li-count">v1.1</span></a></li>
-      <li><a href="app/Retail-v1.0.apk">Retail - Android<span class="ui-li-count">v1.0</span></a></li>
-      <li><a href="app/CubeaconHajj-v1.2.apk">Hajj - Android<span class="ui-li-count">v1.2</span></a></li>
-    </ul>
-  <a href="#home" data-role="button" data-inline="true" data-icon="back">Go Back</a>
+      <form method="get" action="">
+
+        <div class="ui-field-contain">
+          <label for="name">Full Name :</label>
+          <input type="text" name="name" id="name" value="" placeholder="What's your name?" required>
+        </div>
+          
+        <div class="ui-field-contain">
+          <label for="search">Email :</label>
+          <input type="text" name="email" id="email" value="" placeholder="Your email address..." required>
+        </div>
+
+        <div class="ui-field-contain">
+          <label for="info">Additional Information :</label>
+          <textarea name="info" id="info" placeholder="Add additional information here..." required></textarea>
+        </div>
+      </form>
+      <button id="send-request" class="ui-btn">Send Request</button>
   </div>
                   
   <div data-role="footer" data-position="fixed">
@@ -109,5 +144,7 @@
 </div> 
 <!-- END OF REQUEST PAGE -->
 
+<script src="http://www.parsecdn.com/js/parse-1.6.2.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
